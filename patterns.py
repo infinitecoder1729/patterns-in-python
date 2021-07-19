@@ -78,6 +78,7 @@ for i in range(1, n + 1):
         else:
             print(j, end=' ')
     print()
+   
 ''' *****
     ****
     ***
@@ -89,3 +90,27 @@ for i in range (n,0,-1):
         print("*", end="")
     else :
         print()
+
+'''
+            *             
+            *             
+            *             
+            *             
+    * * * * * * * * * 
+            *             
+            *             
+            *             
+            *             
+'''
+rows = int(input("Enter Desired Number of Rows for the Pattern : "))
+c = 1
+while(c < rows*2):
+    r = 1
+    while(r < rows*2):
+        if c == rows or r == rows:
+            print('* ', end = '')
+        else:
+            print('  ', end = ' ')
+        r = r + 1
+    c = c + 1
+    print("")
