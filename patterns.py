@@ -114,3 +114,42 @@ while(c < rows*2):
         r = r + 1
     c = c + 1
     print("")
+
+'''
+ *  *  *  *  *  *  *  *  *  * 
+ *                          * 
+ *                          * 
+ *                          * 
+ *                          * 
+ *                          * 
+ *                          * 
+ *                          * 
+ *                          * 
+ *  *  *  *  *  *  *  *  *  *
+ '''
+no_of_rows = int(input("Input the number of rows required for the pattern : "))
+print()
+for i in range(no_of_rows):
+    for j in range(no_of_rows):
+        if(i == 0 or i == no_of_rows - 1 or j==0 or j == no_of_rows -1):
+            print(' * ', end = '')
+        else:
+            print('    ', end = '')
+    print()
+
+'''
+  *    *    *    *    *  
+  *    *         *    *  
+  *         *         *  
+  *    *         *    *  
+  *    *    *    *    * 
+'''
+no_of_rows = int(input("Input the number of rows required for the pattern : "))
+print()
+for i in range(no_of_rows):
+    for j in range(no_of_rows):
+        if(i==j or i == 0 or i == no_of_rows - 1 or j == (no_of_rows - 1 - i) or j==0 or j == no_of_rows -1):
+            print('  *  ', end = '')
+        else:
+            print('      ', end = '')
+    print()
